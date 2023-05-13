@@ -1,0 +1,397 @@
+/* Global Styles */
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #428bca;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3071a9;
+}
+
+/* Header Section */
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: "zantrokeregular", serif;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+header.hidden {
+  transform: translateY(-100%);
+}
+ 
+h1 {
+  margin: 0;
+  font-size: 28px;
+  text-shadow: 2px 2px 2px rgba(14, 14, 126, 0.1);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #f2f2f2;
+}
+
+nav ul li.contact-me a {
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* Hero Section */
+
+.hero {
+  background-image: url('./assets/Roasted-Chicken.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 24px;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Specialties Section */
+
+.specialties {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.specialties h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.specialties ul {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.specialties li {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* Gallery Section */
+
+.gallery {
+  padding: 80px 20px;
+}
+
+.gallery h2 {
+font-size: 36px;
+font-weight: bold;
+margin: 0;
+}
+
+.gallery ul {
+margin-top: 20px;
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+}
+
+.gallery li {
+flex-basis: calc(33.33% - 20px);
+margin-right: 20px;
+margin-bottom: 20px;
+}
+
+.gallery li:last-child {
+margin-right: 0;
+}
+
+.gallery img {
+width: 50%;
+height: auto;
+border-radius: 4px;
+}
+
+
+/* Testimonials Section */
+
+.testimonials {
+padding: 80px 20px;
+text-align: center;
+}
+
+.testimonials h2 {
+font-size: 36px;
+font-weight: bold;
+margin: 0;
+}
+
+.testimonials blockquote {
+font-size: 24px;
+margin: 0 auto;
+max-width: 600px;
+}
+
+.testimonials blockquote p {
+margin: 0;
+padding: 20px;
+border-radius: 4px;
+background-color: #f2f2f2;
+}
+
+.testimonials blockquote footer {
+margin-top: 20px;
+}
+
+/* Contact Section */
+
+.contact {
+padding: 80px 20px;
+}
+
+.contact h2 {
+font-size: 36px;
+font-weight: bold;
+text-align: center;
+margin: 0;
+}
+
+.contact p {
+margin: 20px 0;
+font-size: 20px;
+}
+
+.contact form {
+max-width: 600px;
+margin: 0 auto;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+display: block;
+width: 100%;
+margin-bottom: 20px;
+padding: 10px;
+border-radius: 4px;
+border: none;
+background-color: #f2f2f2;
+font-size: 16px;
+}
+
+.contact textarea {
+height: 200px;
+}
+
+.contact input[type="submit"] {
+display: block;
+margin: 0 auto;
+}
+
+/* Footer Section */
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+font-size: 14px;
+}
+
+footer a {
+color: #fff;
+text-decoration: underline;
+}
+
+/* Hide header on scroll */
+
+header.visible {
+transform: translateY(0);
+}
+
+header.hidden {
+transform: translateY(-100%);
+}
+
+/* Decorate Contact Me button */
+
+nav ul li.contact-me a {
+background-color: #f44336;
+color: #fff;
+padding: 8px 16px;
+border-radius: 20px;
+transition: all 0.3s ease;
+}
+
+nav ul li.contact-me a:hover {
+background-color: #fff;
+color: #f44336;
+}
+
+/* Decorate footer */
+
+footer a {
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+footer a:hover {
+color: #f44336;
+text-decoration: underline;
+}
+
+/* About */
+
+#about {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#about img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#about img:hover {
+  transform: scale(1.1);
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 20px;
+  font-family: "zantrokeregular", serif;
+
+  text-align: justify;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+.modal-content h1{
+  text-align: center;
+  font-weight: 700;
+}
+.modal-content p{
+  text-align: center;
+  font-weight: 700;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

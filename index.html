@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chef.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-9K9X3qTmKjG3fONp13+3o0P7d0lGj01m/hzLQ2XsO7vZ8NlsWVwokWh4I4uVfNKyP8oWV7xrh1kIbKWVjKQ8WQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <header>
+      <h1>Chef<b>.</b></h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+		      <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <h2>Welcome to my chef portfolio</h2>
+        <p>I am a female chef passionate about creating delicious, nutritious meals that are easy to make at home. Browse my portfolio to see some of my best dishes.</p>
+        <a href="recipes.html" class="btn">View Recipes</a>
+      </section>
+      <section class="specialties">
+        <h2>My Specialties</h2>
+        <ul>
+          <li>Healthy meals for busy people</li>
+          <li>Vegan and vegetarian cuisine</li>
+          <li>Gluten-free and allergy-friendly dishes</li>
+          <li>International flavors and fusion cuisine</li>
+        </ul>
+      </section>
+      <section class="gallery" id="gallery">
+        <h2>My Gallery</h2>
+        <ul>
+          <li><img src="./assets/Beef-Stir-Fry.jpg" alt="Dish 1"></li>
+          <li><img src="./assets/pan-seared-salmon.jpg" alt="Dish 2"></li>
+          <li><img src="./assets/Roasted-Chicken.jpg" alt="Dish 3"></li>
+          <li><img src="./assets/Shrimp-Scampi.jpg" alt="Dish 4"></li>
+        </ul>
+        <a href="recipes.html" class="btn">View More Recipes</a>
+      </section>
+      <section id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="./assets/profile-pic.png" alt="Profile Picture">
+            </div>
+            <div class="col-md-6">
+              <p>Hi, I'm Rabia Tufail, a female student currently in my 6th semester of BSCS at IUB University. My roll number is 15 in the class. Apart from my studies, I have a keen interest in teaching and have previously taught computer science to female college students on a voluntary basis.</p>
+              <p>Aside from teaching, I also enjoy cooking and experimenting with new recipes. I love to work as a chef in my own kitchen, making different types of dishes and exploring different cuisines.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form >
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="reset" id="btn" class="btn">Send Message</button>
+        </form>
+      </section>
+
+      <div id="myModal" class="modal" style="display:none">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Thank You</h1>
+          <p>You'r response is valuable for us.</p>
+          <div class="image">
+          <img src="./assets/correct.png" width="100px" height="100px">
+        </div>
+        </div>
+      </div>
+      
+    </main>
+ 
+
+    <footer>
+      <p>&copy; 2023 Chef. All rights reserved.</p>
+    </footer>
+    
+  <script src="main.js"></script>
+  </body>
+</html>
